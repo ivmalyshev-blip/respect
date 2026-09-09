@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440">
+  <title>Респект — Нерудные материалы с карьеров</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Onest:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ─── PRELOADER ─── -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo">РЕСПЕКТ</div>
+      <div class="preloader__bar-wrap">
+        <div class="preloader__bar" id="preloaderBar"></div>
+      </div>
+      <div class="preloader__count" id="preloaderCount">0</div>
+    </div>
+  </div>
+
+  <!-- ─── HEADER ─── -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">РЕСПЕКТ</a>
+      <div class="header__meta">
+        <span>Москва&nbsp;/&nbsp;Санкт-Петербург</span>
+        <span class="header__sep">/</span>
+        <span>Пн–Пт 9:00–18:00</span>
+      </div>
+      <nav class="header__nav">
+        <a class="header__nav-link" href="#catalog">Каталог</a>
+        <a class="header__nav-link" href="#about">О компании</a>
+        <a class="header__nav-link" href="#process">Доставка</a>
+        <a class="header__nav-link" href="#gallery">Объекты</a>
+        <a class="header__nav-link" href="#contacts">Контакты</a>
+      </nav>
+      <div class="header__right">
+        <a href="tel:+74951322021" class="header__phone">+7 (495) 132-20-21</a>
+        <a href="#order" class="btn btn--sm">Заказать</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="assets/hero-bg.jpg" alt="" class="hero__bg-img" id="heroBgImg">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__corners">
+      <div class="hero__corner hero__corner--tl">
+        <span class="hero__corner-label">Нерудные материалы</span>
+        <span class="hero__corner-value">с 2008 года</span>
+      </div>
+      <div class="hero__corner hero__corner--tr">
+        <span class="hero__corner-label">Телефон</span>
+        <a href="tel:+74951322021" class="hero__corner-value">+7 (495) 132-20-21</a>
+      </div>
+      <div class="hero__corner hero__corner--br">
+        <span class="hero__corner-label">Доставка от</span>
+        <span class="hero__corner-value">1 тонны</span>
+      </div>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__line" data-reveal>Нерудные</span>
+        <span class="hero__line" data-reveal>материалы</span>
+        <span class="hero__line hero__line--accent" data-reveal>напрямую</span>
+        <span class="hero__line" data-reveal>с карьеров</span>
+      </h1>
+      <div class="hero__sub" data-reveal>
+        Щебень, песок, гравий, керамзит —<br>
+        поставки по Москве, МО и Санкт-Петербургу
+      </div>
+      <div class="hero__actions" data-reveal>
+        <a href="#order" class="btn btn--primary">Получить прайс</a>
+        <a href="#catalog" class="btn btn--ghost">Каталог</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Скролл</span>
+    </div>
+  </section>
+
+  <!-- ─── CATALOG ─── -->
+  <section class="catalog section" id="catalog">
+    <div class="catalog__head">
+      <div class="section-label">01 / Каталог</div>
+      <h2 class="section-title" data-split>Каталог<br>материалов</h2>
+      <p class="catalog__desc">Поставляем напрямую с карьеров — без посредников. Все партии сопровождаются паспортами качества и сертификатами ГОСТ.</p>
+    </div>
+    <div class="catalog__grid">
+
+      <article class="mat-card" data-reveal-card>
+        <div class="mat-card__media">
+          <img src="assets/sheben.jpg" alt="Щебень" class="mat-card__img">
+          <div class="mat-card__overlay">
+            <p>Гранитный, известняковый, шлаковый, мытый. Фракции 5–10, 10–20, 20–40, 40–70 мм. Применяется в бетонах, дорожном строительстве и фундаментах.</p>
+          </div>
+        </div>
+        <div class="mat-card__body">
+          <h3 class="mat-card__name">Щебень</h3>
+          <p class="mat-card__short">Гранитный / известняковый / шлаковый</p>
+          <div class="mat-card__foot">
+            <span class="mat-card__price">от 650 ₽/т</span>
+            <a href="#order" class="mat-card__link">Заказать →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mat-card" data-reveal-card>
+        <div class="mat-card__media">
+          <img src="assets/pesok.jpg" alt="Песок" class="mat-card__img">
+          <div class="mat-card__overlay">
+            <p>Карьерный, речной, сеяный. Модуль крупности от 1,5 до 3,0. Для строительства, стяжки, благоустройства и планировки участков.</p>
+          </div>
+        </div>
+        <div class="mat-card__body">
+          <h3 class="mat-card__name">Песок</h3>
+          <p class="mat-card__short">Карьерный / речной / сеяный</p>
+          <div class="mat-card__foot">
+            <span class="mat-card__price">от 320 ₽/т</span>
+            <a href="#order" class="mat-card__link">Заказать →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mat-card" data-reveal-card>
+        <div class="mat-card__media">
+          <img src="assets/gravij.jpg" alt="Гравий и ПГС" class="mat-card__img">
+          <div class="mat-card__overlay">
+            <p>Гравий речной и карьерный фракций 5–20, 20–40 мм. ПГС и ПГС обогащённая для устройства оснований дорог и площадок.</p>
+          </div>
+        </div>
+        <div class="mat-card__body">
+          <h3 class="mat-card__name">Гравий / ПГС</h3>
+          <p class="mat-card__short">Гравий / ПГС / ПГС обогащённая</p>
+          <div class="mat-card__foot">
+            <span class="mat-card__price">от 480 ₽/т</span>
+            <a href="#order" class="mat-card__link">Заказать →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mat-card" data-reveal-card>
+        <div class="mat-card__media">
+          <img src="assets/keramzit.jpg" alt="Керамзит" class="mat-card__img">
+          <div class="mat-card__overlay">
+            <p>Лёгкий пористый заполнитель для засыпки полов и перекрытий. Фракции 5–10 и 10–20 мм. Коэффициент теплопроводности 0,10–0,18 Вт/(м·К).</p>
+          </div>
+        </div>
+        <div class="mat-card__body">
+          <h3 class="mat-card__name">Керамзит</h3>
+          <p class="mat-card__short">Фракции 5–10 / 10–20 мм</p>
+          <div class="mat-card__foot">
+            <span class="mat-card__price">от 1 800 ₽/м³</span>
+            <a href="#order" class="mat-card__link">Заказать →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mat-card" data-reveal-card>
+        <div class="mat-card__media">
+          <img src="assets/shps.jpg" alt="ЩПС" class="mat-card__img">
+          <div class="mat-card__overlay">
+            <p>Щебёночно-песчаная смесь С4–С8 для укрепления и выравнивания оснований под дороги, парковки, промышленные площадки.</p>
+          </div>
+        </div>
+        <div class="mat-card__body">
+          <h3 class="mat-card__name">ЩПС</h3>
+          <p class="mat-card__short">Смеси С4 / С5 / С6 / С7 / С8</p>
+          <div class="mat-card__foot">
+            <span class="mat-card__price">от 430 ₽/т</span>
+            <a href="#order" class="mat-card__link">Заказать →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mat-card" data-reveal-card>
+        <div class="mat-card__media">
+          <img src="assets/grunt.jpg" alt="Грунт" class="mat-card__img">
+          <div class="mat-card__overlay">
+            <p>Плодородный грунт, суглинок, растительный слой для вертикальной планировки, рекультивации и озеленения территорий.</p>
+          </div>
+        </div>
+        <div class="mat-card__body">
+          <h3 class="mat-card__name">Грунт</h3>
+          <p class="mat-card__short">Плодородный / суглинок / растительный</p>
+          <div class="mat-card__foot">
+            <span class="mat-card__price">от 250 ₽/т</span>
+            <a href="#order" class="mat-card__link">Заказать →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about section" id="about">
+    <div class="about__media-col">
+      <div class="about__img-wrap">
+        <img src="assets/quarry-1.jpg" alt="Карьер" class="about__img" id="aboutImg">
+      </div>
+      <div class="about__stats">
+        <div class="about__stat">
+          <span class="about__stat-num">16</span>
+          <span class="about__stat-label">лет на рынке</span>
+        </div>
+        <div class="about__stat">
+          <span class="about__stat-num">200<sup>+</sup></span>
+          <span class="about__stat-label">завершённых объектов</span>
+        </div>
+        <div class="about__stat">
+          <span class="about__stat-num">2</span>
+          <span class="about__stat-label">офиса: Москва / СПб</span>
+        </div>
+      </div>
+    </div>
+    <div class="about__content-col">
+      <div class="section-label">02 / О компании</div>
+      <h2 class="section-title" data-split>Напрямую<br>с карьеров</h2>
+      <p class="about__text">Компания Респект работает с 2008 года — поставляем нерудные материалы без посредников, напрямую от добывающих предприятий Ленинградской и Московской областей. Разница в цене от рынка — 10–20%.</p>
+      <p class="about__text">Каждая партия взвешивается на карьерных весах, сопровождается товарной накладной, паспортом качества и сертификатом соответствия ГОСТ.</p>
+      <div class="about__features">
+        <div class="feat" data-reveal-card>
+          <div class="feat__num">01</div>
+          <div class="feat__text">Сертификаты и паспорта качества на каждую партию</div>
+        </div>
+        <div class="feat" data-reveal-card>
+          <div class="feat__num">02</div>
+          <div class="feat__text">Собственный автопарк — точно в срок, без сюрпризов</div>
+        </div>
+        <div class="feat" data-reveal-card>
+          <div class="feat__num">03</div>
+          <div class="feat__text">НДС и без НДС, физлица и юрлица — любая форма оплаты</div>
+        </div>
+        <div class="feat" data-reveal-card>
+          <div class="feat__num">04</div>
+          <div class="feat__text">Доставка от 1 тонны по Москве, МО и Санкт-Петербургу</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROCESS ─── -->
+  <section class="process section" id="process">
+    <div class="process__top">
+      <div>
+        <div class="section-label">03 / Доставка</div>
+        <h2 class="section-title" data-split>Как&nbsp;это<br>работает</h2>
+      </div>
+      <p class="process__intro">От заявки до разгрузки на объекте — в среднем 4–6 часов по Москве. Вся цепочка прозрачна и задокументирована.</p>
+    </div>
+    <div class="process__steps">
+      <div class="process__step" data-step>
+        <div class="process__step-index">01</div>
+        <div class="process__step-body">
+          <h3 class="process__step-title">Заявка</h3>
+          <p class="process__step-desc">Звоните или оставляйте заявку на сайте. Менеджер перезвонит в течение 15 минут, уточнит объём, фракцию и адрес доставки.</p>
+        </div>
+      </div>
+      <div class="process__step" data-step>
+        <div class="process__step-index">02</div>
+        <div class="process__step-body">
+          <h3 class="process__step-title">Счёт и документы</h3>
+          <p class="process__step-desc">Выставляем счёт в течение часа. Прилагаем сертификат качества и паспорт на материал. Работаем строго по договору.</p>
+        </div>
+      </div>
+      <div class="process__step" data-step>
+        <div class="process__step-index">03</div>
+        <div class="process__step-body">
+          <h3 class="process__step-title">Загрузка и взвешивание</h3>
+          <p class="process__step-desc">Самосвал загружается прямо на карьере и взвешивается на весовой — данные идут в накладную. Никакого недовеса.</p>
+        </div>
+      </div>
+      <div class="process__step" data-step>
+        <div class="process__step-index">04</div>
+        <div class="process__step-body">
+          <h3 class="process__step-title">Доставка на объект</h3>
+          <p class="process__step-desc">Водитель связывается с вами за 30 минут до прибытия. После разгрузки — накладная и акт в тот же день.</p>
+        </div>
+      </div>
+    </div>
+    <div class="process__truck-band">
+      <img src="assets/truck.jpg" alt="Самосвал с нерудными материалами" class="process__truck-img" id="truckImg">
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ─── -->
+  <section class="gallery section" id="gallery">
+    <div class="gallery__head">
+      <div>
+        <div class="section-label">04 / Объекты</div>
+        <h2 class="section-title" data-split>Наши<br>объекты</h2>
+      </div>
+      <div class="gallery__nav">
+        <button class="gallery__arrow" id="galleryPrev" aria-label="Предыдущий">←</button>
+        <span class="gallery__counter"><span id="galleryCur">01</span>&nbsp;/&nbsp;05</span>
+        <button class="gallery__arrow" id="galleryNext" aria-label="Следующий">→</button>
+      </div>
+    </div>
+    <div class="gallery__viewport" id="galleryViewport">
+      <div class="gallery__track" id="galleryTrack">
+        <div class="gallery__slide">
+          <img src="assets/gallery-1.jpg" alt="ЖК, Москва">
+          <div class="gallery__caption">
+            <span class="gallery__caption-tag">Жилое строительство</span>
+            <span class="gallery__caption-title">ЖК «Северный», Москва</span>
+            <span class="gallery__caption-sub">Щебень 20–40 / ПГС — 1 200 т / 2024</span>
+          </div>
+        </div>
+        <div class="gallery__slide">
+          <img src="assets/gallery-2.jpg" alt="Дорожные работы, МО">
+          <div class="gallery__caption">
+            <span class="gallery__caption-tag">Дорожное строительство</span>
+            <span class="gallery__caption-title">Трасса А107, Подмосковье</span>
+            <span class="gallery__caption-sub">ЩПС С5 / щебень 40–70 — 3 400 т / 2024</span>
+          </div>
+        </div>
+        <div class="gallery__slide">
+          <img src="assets/gallery-3.jpg" alt="Благоустройство, СПб">
+          <div class="gallery__caption">
+            <span class="gallery__caption-tag">Благоустройство</span>
+            <span class="gallery__caption-title">Парк Малиновка, СПб</span>
+            <span class="gallery__caption-sub">Песок / гравий 5–20 — 820 т / 2023</span>
+          </div>
+        </div>
+        <div class="gallery__slide">
+          <img src="assets/gallery-4.jpg" alt="Промышленный объект, Подольск">
+          <div class="gallery__caption">
+            <span class="gallery__caption-tag">Промышленное строительство</span>
+            <span class="gallery__caption-title">Складской комплекс, Подольск</span>
+            <span class="gallery__caption-sub">Щебень / ЩПС / грунт — 5 600 т / 2023</span>
+          </div>
+        </div>
+        <div class="gallery__slide">
+          <img src="assets/gallery-5.jpg" alt="Коттеджный посёлок, Химки">
+          <div class="gallery__caption">
+            <span class="gallery__caption-tag">Частное строительство</span>
+            <span class="gallery__caption-title">КП «Зелёные холмы», Химки</span>
+            <span class="gallery__caption-sub">Песок / керамзит — 420 т / 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery__progress">
+      <div class="gallery__progress-fill" id="galleryProgress"></div>
+    </div>
+  </section>
+
+  <!-- ─── REVIEWS ─── -->
+  <section class="reviews section" id="reviews">
+    <div class="reviews__head">
+      <div class="section-label">05 / Отзывы</div>
+      <h2 class="section-title" data-split>Говорят<br>клиенты</h2>
+    </div>
+    <div class="reviews__grid">
+      <div class="review-card" data-reveal-card>
+        <div class="review-card__top">
+          <div class="review-card__avatar">АК</div>
+          <div class="review-card__meta">
+            <div class="review-card__name">Андрей Ковалёв</div>
+            <div class="review-card__role">ООО «СтройМонтаж», прораб</div>
+          </div>
+          <div class="review-card__stars">★★★★★</div>
+        </div>
+        <p class="review-card__text">«Работаем с Респектом уже третий год на разных объектах. Щебень всегда приходит в срок, документы без вопросов. Цена держится стабильно — это важно при длинных договорах.»</p>
+      </div>
+      <div class="review-card" data-reveal-card>
+        <div class="review-card__top">
+          <div class="review-card__avatar">МВ</div>
+          <div class="review-card__meta">
+            <div class="review-card__name">Мария Воронова</div>
+            <div class="review-card__role">ИП, ландшафтное бюро</div>
+          </div>
+          <div class="review-card__stars">★★★★★</div>
+        </div>
+        <p class="review-card__text">«Заказывала песок и гравий для частного участка — привезли быстро, водитель помог разгрузить точно куда нужно. Без лишних звонков и переносов.»</p>
+      </div>
+      <div class="review-card" data-reveal-card>
+        <div class="review-card__top">
+          <div class="review-card__avatar">ДП</div>
+          <div class="review-card__meta">
+            <div class="review-card__name">Дмитрий Платонов</div>
+            <div class="review-card__role">Главный инженер, «Дорстрой»</div>
+          </div>
+          <div class="review-card__stars">★★★★★</div>
+        </div>
+        <p class="review-card__text">«Поставили 4 000 тонн ЩПС на дорожный объект. Все партии с сертификатами, замеры совпали с заявленными. Рекомендую коллегам.»</p>
+      </div>
+    </div>
+    <div class="guarantee-row">
+      <div class="guarantee-card" data-reveal-card>
+        <div class="guarantee-card__label">Гарантия качества</div>
+        <div class="guarantee-card__val">Замена или возврат</div>
+        <p>Если партия не соответствует паспорту — заменим или вернём деньги без споров и бюрократии.</p>
+      </div>
+      <div class="guarantee-card" data-reveal-card>
+        <div class="guarantee-card__label">Документы</div>
+        <div class="guarantee-card__val">По каждой машине</div>
+        <p>Паспорт качества, ГОСТ, протоколы испытаний — сертификаты запрашиваются в любой момент.</p>
+      </div>
+      <div class="guarantee-card" data-reveal-card>
+        <div class="guarantee-card__label">Весовой контроль</div>
+        <div class="guarantee-card__val">Карьерные весы</div>
+        <p>Каждый самосвал взвешивается на весовой перед выездом. Вес в накладной = вес на вашем объекте.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ORDER FORM ─── -->
+  <section class="order section" id="order">
+    <div class="order__wrap">
+      <div class="order__content">
+        <div class="section-label">06 / Заявка</div>
+        <h2 class="section-title" data-split>Получить<br>прайс-лист</h2>
+        <p class="order__sub">Оставьте имя и телефон — менеджер перезвонит в течение 15 минут и подберёт условия под ваш объём и задачу.</p>
+        <div class="order__props">
+          <div class="order__prop">
+            <span class="order__prop-val">15 мин</span>
+            <span class="order__prop-label">время ответа</span>
+          </div>
+          <div class="order__prop">
+            <span class="order__prop-val">от 1 т</span>
+            <span class="order__prop-label">минимальный заказ</span>
+          </div>
+        </div>
+      </div>
+      <form class="order__form" id="orderForm" novalidate>
+        <div class="field">
+          <label class="field__label" for="fname">Имя</label>
+          <input class="field__input" id="fname" name="name" type="text" placeholder="Иван Иванов" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label class="field__label" for="fphone">Телефон</label>
+          <input class="field__input" id="fphone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg">Отправить заявку</button>
+        <p class="order__agree">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки данных</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ─── CONTACTS ─── -->
+  <section class="contacts section" id="contacts">
+    <div class="contacts__head">
+      <div class="section-label">07 / Контакты</div>
+      <h2 class="section-title" data-split>Свяжитесь<br>с нами</h2>
+    </div>
+    <div class="contacts__grid">
+      <div class="contacts__block">
+        <div class="contacts__block-label">Москва</div>
+        <a href="tel:+74951322021" class="contacts__phone">+7 (495) 132-20-21</a>
+        <p class="contacts__detail">Пн–Пт 9:00–18:00<br>Сб 10:00–15:00</p>
+      </div>
+      <div class="contacts__block">
+        <div class="contacts__block-label">Санкт-Петербург</div>
+        <a href="tel:+78126026427" class="contacts__phone">+7 (812) 602-64-27</a>
+        <p class="contacts__detail">198095, Промышленная ул., д. 19<br>Пн–Пт 9:00–18:00</p>
+      </div>
+      <div class="contacts__block">
+        <div class="contacts__block-label">Электронная почта</div>
+        <a href="mailto:info@gk-respect.com" class="contacts__phone">info@gk-respect.com</a>
+        <p class="contacts__detail">Отвечаем в течение рабочего дня</p>
+      </div>
+      <div class="contacts__block">
+        <div class="contacts__block-label">Мессенджеры</div>
+        <div class="contacts__messengers">
+          <a href="#" class="contacts__messenger-link">WhatsApp</a>
+          <a href="#" class="contacts__messenger-link">Telegram</a>
+          <a href="#" class="contacts__messenger-link">ВКонтакте</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer" id="footer">
+    <div class="footer__marquee-band">
+      <div class="footer__marquee" id="footerMarquee">
+        <div class="footer__marquee-inner">
+          <span>РЕСПЕКТ</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>НЕРУДНЫЕ МАТЕРИАЛЫ</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>С КАРЬЕРОВ НАПРЯМУЮ</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>С 2008 ГОДА</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>МОСКВА</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>САНКТ-ПЕТЕРБУРГ</span>
+          <span class="footer__marquee-sep">/</span>
+        </div>
+        <div class="footer__marquee-inner" aria-hidden="true">
+          <span>РЕСПЕКТ</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>НЕРУДНЫЕ МАТЕРИАЛЫ</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>С КАРЬЕРОВ НАПРЯМУЮ</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>С 2008 ГОДА</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>МОСКВА</span>
+          <span class="footer__marquee-sep">/</span>
+          <span>САНКТ-ПЕТЕРБУРГ</span>
+          <span class="footer__marquee-sep">/</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__body">
+      <div class="footer__col-brand">
+        <div class="footer__logo" id="footerLogo">РЕСПЕКТ</div>
+        <p class="footer__tagline">Нерудные материалы<br>напрямую с карьеров</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <div class="footer__col-head">Материалы</div>
+          <a class="footer__col-link" href="#catalog">Щебень</a>
+          <a class="footer__col-link" href="#catalog">Песок</a>
+          <a class="footer__col-link" href="#catalog">Гравий / ПГС</a>
+          <a class="footer__col-link" href="#catalog">Керамзит</a>
+          <a class="footer__col-link" href="#catalog">ЩПС</a>
+          <a class="footer__col-link" href="#catalog">Грунт</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-head">Компания</div>
+          <a class="footer__col-link" href="#about">О компании</a>
+          <a class="footer__col-link" href="#process">Доставка</a>
+          <a class="footer__col-link" href="#gallery">Объекты</a>
+          <a class="footer__col-link" href="#reviews">Отзывы</a>
+          <a class="footer__col-link" href="#">Сертификаты</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-head">Контакты</div>
+          <a class="footer__col-link" href="tel:+74951322021">+7 (495) 132-20-21 МСК</a>
+          <a class="footer__col-link" href="tel:+78126026427">+7 (812) 602-64-27 СПб</a>
+          <a class="footer__col-link" href="mailto:info@gk-respect.com">info@gk-respect.com</a>
+          <div class="footer__messengers">
+            <a href="#" class="footer__msg">WA</a>
+            <a href="#" class="footer__msg">TG</a>
+            <a href="#" class="footer__msg">VK</a>
+          </div>
+        </div>
+        <div class="footer__col footer__col--cta">
+          <div class="footer__col-head">Пн–Пт 9:00–18:00<br>Сб 10:00–15:00</div>
+          <a href="#order" class="btn btn--primary">Заказать материал</a>
+          <p class="footer__cert">Работаем с 2008&nbsp;/ ООО «ГК Респект»</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2024 ООО «ГК Респект»</span>
+      <a href="#">Политика конфиденциальности</a>
+      <span>198095, СПб, Промышленная ул., 19</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
